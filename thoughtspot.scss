@@ -37,3 +37,8 @@
 .segment-control-module__segmentedControl .segment-control-module__segmentedItem.segment-control-module__selected .segment-control-module__innerText {
   color: #c5281c !important;
 }
+[class^="_backgroundLight_"] {
+  &[class^="_primary_"] {
+    background-color: #c5281c !important;
+  }
+}
