@@ -3,3 +3,15 @@
     background-color: #c5281c !important;
   }
 }
+.button-module__backgroundLight{
+  &.button-module__primary {
+    background-color: #c5281c !important;
+  }
+}
+
+.bk-input-container .bk-input .bk-input-container-inner::after {
+  border-bottom: 2px solid #c5281c !important;
+}
+[data-tour-id="sage-search-button-tour"] {
+  background-color: #c5281c !important;
+}
