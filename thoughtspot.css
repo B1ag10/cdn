@@ -26,4 +26,8 @@
   background-color: #c5281c !important;
 }
 
+.top-list-filters .bk-filter-item .bk-top-menu-filters li:focus, .top-list-filters .bk-filter-item .bk-top-menu-filters li:hover {
+  color: #c5281c !important;
+}
+
 /*# sourceMappingURL=thoughtspot.css.map */
