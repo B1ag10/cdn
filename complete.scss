@@ -1,4 +1,5 @@
 /*root variables*/
+
 :root {
   --black-shadow-color: rgba(0, 0, 0, 0.15);
   --light-shadow-color: rgba(0, 0, 0, 0.2);
@@ -25,25 +26,33 @@
 }
 
 /* Font-family */
+
 @font-face {
-  font-family: "Dancing Script";
+  font-family: 'Dancing Script';
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/dancingscript/v22/If2RXTr6YS-zF4S-kcSWSVi_szLgiuEHiC4W.woff2) format("woff2");
+  src: url(https://fonts.gstatic.com/s/dancingscript/v22/If2RXTr6YS-zF4S-kcSWSVi_szLgiuEHiC4W.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
+
 *:not(.find-widget.visible div) {
   font-family: "Dancing Script" !important;
 }
 
 /* app background*/
-.bk-actionable-list .bk-actionable-list-content .bk-actionable-list-header,
-.bk-actionable-list .bk-actionable-list-content .bk-list-header-wrapper,
-.bk-actionable-list .bk-actionable-list-content .bk-list-content,
-.bk-sharable-item .bk-sharable-item-container .bk-sharable-content-container,
-.bk-vertical-flex-container-sized,
-.answer-module__searchCurtain {
+
+.bk-actionable-list .bk-actionable-list-content .bk-actionable-list-header
+/*action header */
+, .bk-actionable-list .bk-actionable-list-content .bk-list-header-wrapper
+/* table headr right/left space*/
+, .bk-actionable-list .bk-actionable-list-content .bk-list-content
+/* table body right/left space*/
+, .bk-sharable-item .bk-sharable-item-container .bk-sharable-content-container
+/*  pinboard detail */
+, .bk-vertical-flex-container-sized
+/* data tab*/,
+.answer-module__searchCurtain /* answer section*/ {
   background-color: var(--grey-p8-color) !important;
 }
 
@@ -52,20 +61,29 @@ bk/rd-button-primary/secondary :  v1
 button-module__primary/secondary: v2
 bk-axis-sort-icon : pinboard up/down arrow
 */
+
 .rd-button-primary,
 .bk-button-primary,
 .button-module__primary {
   font-weight: 800 !important;
-  background: linear-gradient(144.82deg, #0072c2 5.58%, #1792e5 93.38%) !important;
+  background: linear-gradient(
+    144.82deg,
+    #0072c2 5.58%,
+    #1792e5 93.38%
+  ) !important;
   box-shadow: 1px 1px 1px var(--black-shadow-color) !important;
   border-radius: 4px !important;
   color: var(--grey-p9-color) !important;
 }
 
 /*fix8: +Pinboard' should be primary button.*/
-.bk-create-new-pinboard .rd-button-wrapper .rd-button-secondary {
+.bk-create-new-pinboard .rd-button-wrapper .rd-button-secondary  {
   font-weight: 800 !important;
-  background: linear-gradient(144.82deg, #0072c2 5.58%, #1792e5 93.38%) !important;
+  background: linear-gradient(
+    144.82deg,
+    #0072c2 5.58%,
+    #1792e5 93.38%
+  ) !important;
   box-shadow: 1px 1px 1px transparent !important;
   border-radius: 4px !important;
   color: var(--grey-p9-color) !important;
@@ -138,22 +156,34 @@ bk-axis-sort-icon : pinboard up/down arrow
 
 /*  modal inside seconday button
 */
+
 .bk-modal-action-buttons .bk-cancel-button .rd-button-wrapper {
   border: 1px solid var(--icon-light-blue-color) !important;
   border-radius: 4px !important;
 }
 
-.bk-modal-action-buttons .bk-cancel-button .rd-button-wrapper .rd-button-secondary:hover > .rd-button-text {
+.bk-modal-action-buttons
+  .bk-cancel-button
+  .rd-button-wrapper
+  .rd-button-secondary:hover
+  > .rd-button-text {
   color: var(--grey-p9-color) !important;
 }
 
 /* modal inside seconday button (text-color)  */
 .modal-module__footer .modal-module__actionBtn .button-module__secondary > p,
-.bk-modal-action-buttons .bk-cancel-button .rd-button-wrapper .rd-button-secondary .rd-button-text {
+.bk-modal-action-buttons
+  .bk-cancel-button
+  .rd-button-wrapper
+  .rd-button-secondary
+  .rd-button-text {
   color: var(--icon-light-blue-color) !important;
 }
 
-.modal-module__footer .modal-module__actionBtn:hover .button-module__secondary > p {
+.modal-module__footer
+  .modal-module__actionBtn:hover
+  .button-module__secondary
+  > p {
   color: var(--grey-p9-color) !important;
 }
 
@@ -167,16 +197,26 @@ bk-axis-sort-icon : pinboard up/down arrow
   height: 29px !important;
 }
 
-.modal-module__footer .modal-module__actionBtn:hover > .button-module__secondary,
+.modal-module__footer
+  .modal-module__actionBtn:hover
+  > .button-module__secondary,
 .bk-modal-action-buttons .bk-cancel-button .rd-button-wrapper:hover,
-.bk-modal-action-buttons .bk-cancel-button .rd-button-wrapper .rd-button-secondary:hover {
+.bk-modal-action-buttons
+  .bk-cancel-button
+  .rd-button-wrapper
+  .rd-button-secondary:hover {
   background: var(--btn-gradients-light-hover-color) !important;
   border: 1px solid transparent !important;
 }
 
-.modal-module__footer .modal-module__actionBtn:active > .button-module__secondary,
+.modal-module__footer
+  .modal-module__actionBtn:active
+  > .button-module__secondary,
 .bk-modal-action-buttons .bk-cancel-button .rd-button-wrapper:active,
-.bk-modal-action-buttons .bk-cancel-button .rd-button-wrapper .rd-button-secondary:active {
+.bk-modal-action-buttons
+  .bk-cancel-button
+  .rd-button-wrapper
+  .rd-button-secondary:active {
   background: var(--blue-n1-color) !important;
   border: 1px solid transparent !important;
 }
@@ -184,19 +224,20 @@ bk-axis-sort-icon : pinboard up/down arrow
 /*fix.17 discard changes link */
 button[aria-label="Discard changes"], button[aria-label="Discard changes"]:hover,
 button[aria-label="Don't save"],
-button[aria-label="Don't save"] > p, button[aria-label="Don't save"]:hover > p {
-  box-shadow: none !important;
-  border: none !important;
-  outline: none !important;
-  color: var(--icon-light-blue-color) !important;
+button[aria-label="Don't save"] >p, button[aria-label="Don't save"]:hover >p {
+  box-shadow: none  !important;
+  border: none  !important;
+  outline: none  !important;
+  color: var(--icon-light-blue-color)  !important;
   background: var(--grey-p9-color) !important;
   letter-spacing: 0.5px !important;
-  font-weight: 700 !important;
+  font-weight: 700  !important;
   font-size: 14px !important;
 }
 
 /*develop tab see in live btn
 */
+
 .button-module__primary > .button-module__buttonText {
   color: var(--grey-p9-color);
 }
@@ -207,6 +248,7 @@ button[aria-label="Don't save"] > p, button[aria-label="Don't save"]:hover > p {
 rd-chip-wrapper: pinboard v1
 chip-base-module: answer v2
 */
+
 .bk-select-visibility {
   border: none !important;
 }
@@ -243,6 +285,7 @@ chip-base-module: answer v2
 }
 
 /* select disabled */
+
 .bk-select-head.bk-disabled,
 .bk-dropdown-item-disabled,
 .select-module__selectHead[disabled] {
@@ -251,6 +294,7 @@ chip-base-module: answer v2
 }
 
 /* dropdown up icon caret background */
+
 .select-module__selectOpen > [data-radiant-v2].icon-module__gray,
 .bk-select.bk-dropdown-open .dropdown-caret {
   background: var(--btn-gradients-light-pressed-color) !important;
@@ -264,7 +308,8 @@ chip-base-module: answer v2
   padding-top: 0 !important;
 }
 
-.select-module__popoverWrapper > [data-radiant-v2].input-base-module__container {
+.select-module__popoverWrapper
+  > [data-radiant-v2].input-base-module__container {
   border: none !important;
   padding-left: 14px;
   background: var(--grey-p7-color) !important;
@@ -289,6 +334,7 @@ chip-base-module: answer v2
 
 /* filter chips pinboard v1
  */
+
 .rd-chip.rd-chip-style-filter {
   background: var(--grey-p9-color) !important;
   padding: 0 10px !important; /* pinboard dropdown padding */
@@ -302,6 +348,7 @@ chip-base-module: answer v2
 .bk-input-container: v1
 input-base-module: v2
  */
+
 [data-radiant-v2] .input-base-module__container,
 .bk-input-container-inner {
   background: var(--grey-p7-color) !important;
@@ -333,7 +380,9 @@ input:placeholder-shown {
   font-style: italic !important;
 }
 
-[data-radiant-v2] .input-base-module__container:hover [data-radiant-v2].icon-module__gray,
+[data-radiant-v2]
+  .input-base-module__container:hover
+  [data-radiant-v2].icon-module__gray,
 .bk-input-container-inner:hover .rd-icon-color-gray {
   fill: var(--light-secondary) !important;
 }
@@ -346,6 +395,7 @@ input:placeholder-shown {
 /* table header
   answerlist/pinboard list => v1
 */
+
 /*tag border*/
 .bk-tagged-label {
   border-color: var(--light-secondary) !important;
@@ -353,12 +403,12 @@ input:placeholder-shown {
 
 /* tag text color*/
 .bk-tagged-label .bk-label-text {
-  color: var(--light-secondary) !important;
-  font-weight: 500 !important;
+ color: var(--light-secondary) !important;
+ font-weight: 500 !important;
 }
 
 /* remove tag remove icon bg color */
-.rd-icon-remove-m > svg {
+.rd-icon-remove-m >svg{
   background-color: var(--grey-p9-color) !important;
 }
 
@@ -393,20 +443,20 @@ input:placeholder-shown {
 
 /* table body text */
 .bk-actionable-list .bk-actionable-list-content .bk-list-content .bk-list-content-li {
-  max-height: 50px !important; /* 49px height + 1px border */
-  font-size: 16px !important;
-  font-weight: 500 !important;
-  height: 50px !important;
+   max-height: 50px !important;/* 49px height + 1px border */
+   font-size: 16px !important;
+   font-weight: 500 !important;
+   height: 50px !important;
 }
 
 /* table body hide subtext */
-.bk-actionable-list .bk-actionable-list-content .bk-list .bk-name .bk-description-text {
+ .bk-actionable-list .bk-actionable-list-content .bk-list .bk-name .bk-description-text {
   display: none !important;
 }
 
 /*modified column */
 .bk-actionable-list .bk-actionable-list-content .bk-list .bk-time-and-author .bk-time-author-label,
-.rd-avatar-display-text {
+.rd-avatar-display-text /*author */{
   font-size: 16px !important;
   font-weight: 500 !important;
   line-height: 24px !important;
@@ -415,7 +465,7 @@ input:placeholder-shown {
 
 /* table Name column*/
 .bk-actionable-list .bk-actionable-list-content .bk-list .bk-name .bk-name-text-wrapper .bk-name-text,
-.bk-actionable-list .bk-actionable-list-content .bk-list .bk-name .bk-name-text {
+.bk-actionable-list .bk-actionable-list-content .bk-list .bk-name .bk-name-text /*Data tab: tablname column*/ {
   font-weight: 700 !important;
   font-size: 16px !important;
   line-height: 24px !important;
@@ -423,17 +473,21 @@ input:placeholder-shown {
 }
 
 /*table context box shadow */
-.bk-actionable-list .bk-actionable-list-content .bk-list-content .bk-list-content-wrapper {
+.bk-actionable-list
+  .bk-actionable-list-content
+  .bk-list-content
+  .bk-list-content-wrapper {
   -webkit-box-shadow: none !important;
   box-shadow: none !important;
   color: var(--light-secondary) !important;
 }
 
 /* table content title/subtitle */
+
 .bk-actionable-list .bk-actionable-list-content .bk-list .bk-name .bk-name-text-wrapper .bk-name-text,
 .bk-actionable-list .bk-actionable-list-content .bk-list .bk-name .bk-description-text,
-.vizChart .chart-legend-container-v2 .legend-item-v2 .label-v2 .legend-text-v2,
-.bk-pagination-display-text {
+.vizChart .chart-legend-container-v2 .legend-item-v2 .label-v2 .legend-text-v2   /* chart legend */,
+.bk-pagination-display-text /* pagination text */ {
   color: var(--light-secondary) !important;
 }
 
@@ -457,15 +511,16 @@ input:placeholder-shown {
 
 /* Data tab: Table
 */
+
 /* table edge border*/
 .bk-table-container {
   border: none !important;
 }
 
 /*data table row text*/
-.bk-table-detail .bk-explorer-table .slick-row .slick-cell.column-name-cell .edit-wrapper .bk-value,
-.bk-explorer .bk-content .bk-table-detail .bk-explorer-table .slick-row .slick-cell,
-.bk-actionable-list .bk-actionable-list-content .bk-list .bk-name .bk-name-text {
+.bk-table-detail .bk-explorer-table .slick-row .slick-cell.column-name-cell .edit-wrapper .bk-value /*static row  */,
+.bk-explorer .bk-content .bk-table-detail .bk-explorer-table .slick-row .slick-cell /* scrollable row*/,
+.bk-actionable-list .bk-actionable-list-content .bk-list .bk-name .bk-name-text /* Data Tab: body text */ {
   font-size: 16px !important;
   color: var(--light-secondary) !important;
   font-weight: 500px !important;
@@ -473,6 +528,7 @@ input:placeholder-shown {
 
 /* Slick table inside data tab, after click row
 */
+
 /* slick header text*/
 .bk-table-container .slick-header-column .slick-column-name {
   font-weight: 800 !important;
@@ -481,7 +537,10 @@ input:placeholder-shown {
 }
 
 /* slick table verticle divider*/
-.bk-slickgrid-table .bk-table-container .slick-header-column .slick-resizable-handle {
+.bk-slickgrid-table
+  .bk-table-container
+  .slick-header-column
+  .slick-resizable-handle {
   border-right: 2px solid var(--grey-p8-color) !important;
 }
 
@@ -491,7 +550,12 @@ input:placeholder-shown {
 }
 
 /* slick table header text*/
-.bk-explorer .bk-content .bk-table-detail .bk-explorer-table .slick-header-columns .slick-column-name {
+.bk-explorer
+  .bk-content
+  .bk-table-detail
+  .bk-explorer-table
+  .slick-header-columns
+  .slick-column-name {
   font-weight: 800 !important;
   color: var(--grey-n5-color) !important;
   font-size: 12px !important;
@@ -504,9 +568,11 @@ input:placeholder-shown {
 
 /* Popup
 */
+
 /* popup v2 */
 .modal-module__modal {
-  box-shadow: 15px 30px 40px var(--light-shadow-color), 0px 11px 15px -2px var(--light-shadow-color) !important;
+  box-shadow: 15px 30px 40px var(--light-shadow-color),
+    0px 11px 15px -2px var(--light-shadow-color) !important;
   border-radius: 10px !important;
 }
 
@@ -524,7 +590,7 @@ input:placeholder-shown {
 
 /*Pinboard card (regular card container)*/
 .bk-pinboard-data-viz,
-.bk-pinboard-generic-viz {
+ .bk-pinboard-generic-viz /* fix15.Card hover/raised shadow*/ {
   background: var(--grey-p9-color) !important;
   border: 0.5px solid var(--grey-p6-color) !important;
   box-shadow: 1px 1px 1px 0px var(--black-shadow-color) !important;
@@ -544,8 +610,19 @@ input:placeholder-shown {
 }
 
 /* fix truncated Pinboard title bottom  */
-.bk-sharable-item-pinboard-plugin .bk-edit-dropdown .bk-pinboard-drop-down .bk-select-box .ui-select-container .ui-select-match,
-.bk-sharable-item-pinboard-plugin .bk-edit-dropdown .bk-pinboard-drop-down .bk-select-box .ui-select-container .ui-select-match .select2-chosen {
+.bk-sharable-item-pinboard-plugin
+  .bk-edit-dropdown
+  .bk-pinboard-drop-down
+  .bk-select-box
+  .ui-select-container
+  .ui-select-match,
+.bk-sharable-item-pinboard-plugin
+  .bk-edit-dropdown
+  .bk-pinboard-drop-down
+  .bk-select-box
+  .ui-select-container
+  .ui-select-match
+  .select2-chosen {
   height: 42px !important;
 }
 
@@ -559,19 +636,20 @@ input:placeholder-shown {
 
 /*Search dropdown */
 .sage-completions-dropdown-module__completion:hover,
-.bk-actionable-list .bk-actionable-list-content .bk-list-content .bk-list-content-li:hover:not(.bk-row-selected-bg) {
-  background-color: var(--search-blue) !important;
+.bk-actionable-list .bk-actionable-list-content .bk-list-content .bk-list-content-li:hover:not(.bk-row-selected-bg) /* table hover*/ {
+    background-color: var(--search-blue) !important;
 }
 
 /* Pinboard */
+
 /* User Information (name and user badges) are not required */
 .bk-top-users {
   display: none !important;
 }
 
 /* Filter icon padding is incorrect/ Dropdown outside padding w.r.t outer white container */
-.pinboard-filter-panel > .bk-filter-panel {
-  padding: 8px 16px 10px 16px !important; /* already 8px + 8px */
+.pinboard-filter-panel > .bk-filter-panel{
+  padding: 8px 16px 10px 16px !important;  /* already 8px + 8px */
 }
 
 /* pinboard dropdown top/bottom padding */
@@ -581,8 +659,8 @@ input:placeholder-shown {
 }
 
 /*fix6. Card Title font spec is wrong (pinboard card title) */
-.bk-pinboard-viz-title-description > .bk-title-description > .bk-title-section,
-.bk-title-description .bk-title-section .bk-title {
+.bk-pinboard-viz-title-description > .bk-title-description >.bk-title-section,
+.bk-title-description .bk-title-section .bk-title  {
   font-size: 16px !important;
   font-style: normal !important;
   line-height: 24px !important;
@@ -595,11 +673,13 @@ input:placeholder-shown {
 /* .bk-pinboard-data-viz, .bk-pinboard-generic-viz {
   padding: 32px !important;
 } */
+
 /*fix7. pinboard card/action-menu */
 /* .bk-pinboard-card .bk-pb-card-action-menu {
   padding-top: 32px !important;
   padding-right: 32px !important;
 } */
+
 /*fix8. description padding :- breaking changes (shrink chart size)*/
 .bk-pinboard-data-viz .bk-pinboard-viz-header .bk-description {
   padding-top: 16px !important;
@@ -614,14 +694,14 @@ input:placeholder-shown {
   color: var(--grey-n5-color) !important;
 }
 
-.bk-dialog-container rd-icon:not(.bk-input-icon) + input,
-.bk-dialog-container textarea,
-.bk-dialog .bk-dialog-field input,
-.bk-range-select > .bk-range-select-row > input {
+.bk-dialog-container  rd-icon:not(.bk-input-icon)+input,
+ .bk-dialog-container textarea,
+ .bk-dialog .bk-dialog-field input,
+  .bk-range-select > .bk-range-select-row > input {
   background: var(--grey-p6-color) !important;
   box-shadow: inset 1px 1px 1px var(--black-shadow-color) !important;
   border-radius: 4px !important;
-  border: 1px solid transparent !important;
+  border:  1px solid transparent !important;
   color: var(--light-secondary) !important;
   font-style: italic !important;
   font-size: 16px !important;
@@ -630,54 +710,55 @@ input:placeholder-shown {
   padding: 8px 12px 8px 12px !important;
 }
 
-.bk-dialog-container rd-icon:not(.bk-input-icon) + input:hover, .bk-dialog-container textarea:hover,
+.bk-dialog-container  rd-icon:not(.bk-input-icon)+input:hover, .bk-dialog-container textarea:hover,
 .bk-dialog .bk-dialog-field input:hover,
-.bk-range-select > .bk-range-select-row > input:hover {
-  background: var(--grey-p5-color) !important;
+.bk-range-select > .bk-range-select-row > input:hover   {
+  background: var(--grey-p5-color)  !important;
   font-style: italic !important;
 }
 
-.bk-dialog-container rd-icon:not(.bk-input-icon) + input:active, .bk-dialog-container textarea:active,
+.bk-dialog-container  rd-icon:not(.bk-input-icon)+input:active, .bk-dialog-container textarea:active,
 .bk-dialog .bk-dialog-field input:active,
-.bk-range-select > .bk-range-select-row > input:active {
+.bk-range-select > .bk-range-select-row > input:active   {
   border: 1px solid var(--icon-light-blue-color) !important;
-  color: var(--grey-n5-color) !important;
+  color:  var(--grey-n5-color) !important;
   font-style: normal !important;
 }
 
 /* add pinboard dialog hide extra outline in text area*/
 .bk-dialog-field > textarea:focus-visible {
-  outline: none !important;
+  outline: none  !important;
 }
 
 /* Tab
 .bk-category- for pinboard tab
 rd-tab-header-item for data tab
 */
+
 /* non active tab text */
-.bk-category- > span, .rd-tab-header-item > a > span {
+.bk-category- > span, .rd-tab-header-item > a >span{
   color: var(--light-secondary) !important;
 }
 
 /* active tab text */
-.bk-category-.bk-selected > span, .rd-tab-header-item-selected > a > span {
-  color: var(--grey-n5-color) !important;
+.bk-category-.bk-selected > span, .rd-tab-header-item-selected > a >span {
+ color: var(--grey-n5-color) !important;
 }
 
 /* active tab bottom border */
 .top-list-filters .bk-filter-item .bk-top-menu-filters li.bk-selected::after, .rd-tab-header-item-selected > a::after {
-  background-color: var(--dodger-blue) !important;
+  background-color: var(--dodger-blue)!important;
 }
 
 /* rangle select (add filter inside pinboard) */
-.bk-range-select .chosen-single > span {
+.bk-range-select .chosen-single > span  {
   padding-top: 6px !important;
 }
 
 /* dropdown inside pinboard */
-.bk-operator-selector-wrapper > bk-select > .bk-select > .bk-select-head,
-.bk-range-select .chosen-single {
-  height: 40px !important;
+.bk-operator-selector-wrapper > bk-select > .bk-select  > .bk-select-head,
+.bk-range-select .chosen-single  {
+  height: 40px  !important;
 }
 
 /* pinboard add filter popup input */
@@ -696,7 +777,7 @@ rd-tab-header-item for data tab
 }
 
 /* fix Padding should be 8 px between the buttons. Height of the both button should be same */
-.button-module__buttonWrapper.modal-module__actionBtn button[aria-label="Save answer"] {
+.button-module__buttonWrapper.modal-module__actionBtn button[aria-label='Save answer'] {
   height: 34px !important;
 }
 
@@ -707,9 +788,9 @@ rd-tab-header-item for data tab
 
 /*fix Padding across 'GO' button need to be same. GO button padding 8 */
 .button-module__buttonWrapper.sage-search-bar-module__searchButton {
-  margin-top: 8px !important;
-  margin-right: 8px !important;
-  margin-bottom: 8px !important;
+  margin-top: 8px  !important;
+  margin-right: 8px  !important;
+  margin-bottom: 8px  !important;
 }
 
 /*after Go button padding, set alignment of search icon sage-search*/
@@ -727,13 +808,12 @@ rd-tab-header-item for data tab
   margin-top: 8px;
 }
 
-/* table inside checkbox
+ /* table inside checkbox
  .bk-checkbox-container .bk-checkbox:checked+.bk-checkbox-label::before {
  add here checkbox style...
 } */
+
 /*fix pinboard top padding 50 => 16px */
 .sharable-item-panel {
   padding-top: 16px !important;
 }
-
-/*# sourceMappingURL=complete.css.map */
