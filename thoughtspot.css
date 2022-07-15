@@ -22,4 +22,8 @@
   color: #c5281c !important;
 }
 
+.top-list-filters .bk-filter-item .bk-top-menu-filters li.bk-selected::after {
+  background-color: #c5281c !important;
+}
+
 /*# sourceMappingURL=thoughtspot.css.map */
