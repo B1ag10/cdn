@@ -30,4 +30,8 @@
   color: #c5281c !important;
 }
 
+.segment-control-module__segmentedControl .segment-control-module__segmentedItem.segment-control-module__selected .segment-control-module__innerText {
+  color: #c5281c !important;
+}
+
 /*# sourceMappingURL=thoughtspot.css.map */
